@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tecnoworld</title>
-
+	<script type="text/javascript" src="js/validar.js"></script>  	  
+	
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
   </head>
   <body>
@@ -66,24 +67,33 @@
        <div class="jumbotron-fluid text-center">
 		   <h1 class="display-4">INGRESO CLIENTES</h1>
 		   
-		   <form class="needs-validation" novalidate>
+		   <form class="needs-validation" novalidate onSubmit="return validarform()">
 
 			  <div class="form-group row">
 					<label for="nombre" class="col-sm-2 col-form-label col-form-label-lg">Nombre</label>
 					<div class="col-sm-10">
 					  <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Nombre">
+					  <div class="invalid-feedback">
+          				Por favor ingrese un nombre.
+        			  </div>	
 					</div>
 			  </div>
 			  <div class="form-group row">
 					<label for="direccion" class="col-sm-2 col-form-label col-form-label-lg">Dirección</label>
 					<div class="col-sm-10">
 					  <input type="text" class="form-control form-control-lg" id="direccion" placeholder="Dirección">
+					  <div class="invalid-feedback">
+          				Por favor ingrese la dirección.
+        			  </div>						
 					</div>
 			  </div>
 			  <div class="form-group row">
 					<label for="telefono" class="col-sm-2 col-form-label col-form-label-lg">Teléfono</label>
 					<div class="col-sm-10">
 					  <input type="text" class="form-control form-control-lg" id="telefono" placeholder="Teléfono">
+					  <div class="invalid-feedback">
+          				Por favor ingrese un teléfono.
+        			  </div>						
 					</div>
 			  </div> 
 
@@ -91,24 +101,37 @@
 					<label for="correo" class="col-sm-2 col-form-label col-form-label-lg">Correo</label>
 					<div class="col-sm-10">
 					  <input type="Email" class="form-control form-control-lg" id="correo" placeholder="Correo">
+					  <div class="invalid-feedback">
+          				Por favor ingrese un correo.
+        			  </div>						
 					</div>
 			  </div> 
 			  <div class="form-group row">
 					<label for="ciudad" class="col-sm-2 col-form-label col-form-label-lg">Ciudad</label>
 					<div class="col-sm-10">
 					  <input type="text" class="form-control form-control-lg" id="ciudad" placeholder="Ciudad">
+					  <div class="invalid-feedback">
+          				Por favor ingrese la ciudad.
+        			  </div>						
 					</div>
 			  </div> 
 			  <div class="form-group row">
 					<label for="edad" class="col-sm-2 col-form-label col-form-label-lg">Edad</label>
 					<div class="col-sm-10">
 					  <input type="email" class="form-control form-control-lg" id="edad" placeholder="Edad">
+					  <div class="invalid-feedback">
+          				Por favor ingrese la edad.
+        			  </div>						
 					</div>
-			  </div> 			   
+			  </div>
+			  <div class="form-group row">
+				    <div class="col-sm-10">
+      					<button type="submit" class="btn btn-primary">Enviar</button>
+    				</div>
+			  </div>
 			   
 		   </form>
-
-
+		   
        </div>
        <br/>
        <br/>
